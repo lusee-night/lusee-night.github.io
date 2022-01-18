@@ -1,27 +1,24 @@
----
-name: index
----
 <!doctype html>
 <html lang="en">
   <head>
-  	<title>Sidebar 01</title>
-    <meta charset="utf-8">
+  	<title>LuSEE</title>
+    <!-- meta charset="utf-8" -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 		
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="{{'/css/style.css' | relative_path}}">
   </head>
   <body>
 		
 		<div class="wrapper d-flex align-items-stretch">
 			<nav id="sidebar">
 				<div class="p-4 pt-5">
-		  		<a href="#" class="img logo  mb-5" style="background-image: url(images/LuSEE-logo-3-1d1919.png);border-radius: 10px;"></a>
+		  		<a href="#" class="img logo  mb-5" style="background-image: url({{'images/LuSEE-logo-3-1d1919.png' | relative_url}});border-radius: 10px;"></a>
 	        <ul class="list-unstyled components mb-5">
             <li>
-              <a href="#">Home</a>
+              <a href="{{ '/' | relative_url }}">Home</a>
             </li>
             <li>
               <a href="{{ '/content/science.html' | relative_url }}">Science</a>
@@ -81,8 +78,9 @@ name: index
 
 	        <div class="footer">
 	        	<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						  &copy;<script>document.write(new Date().getFullYear());</script> Template <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+						  &copy;<script>document.write(new Date().getFullYear());</script> Template by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
 						  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+              <p>Site built<br/>  {{ site.time }}</p>
 	        </div>
 
 	      </div>
@@ -121,14 +119,14 @@ name: index
           </div>
         </nav>
 
-        <h2 class="mb-4">Welcome to LuSEE@Night!</h2>
-        <p>Lorem ipsum dolor         Lorem ipsut aliqunt mollit anim id est laborum.</p>
+        {{ content }}
+
       </div>
 		</div>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="{{'js/jquery.min.js' | relative_url}}"></script>
+    <script src="{{'js/popper.js' | relative_url}}"></script>
+    <script src="{{'js/bootstrap.min.js' | relative_url}}"></script>
+    <script src="{{'js/main.js' | relative_url}}"></script>
   </body>
 </html>
