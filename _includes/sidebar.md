@@ -1,6 +1,6 @@
 			<nav id="sidebar">
 				<div class="p-4 pt-5">
-		  		<a href="{{ '/' | relative_url }}" class="img logo  mb-5" style="background-image: url({{'images/LuSEE-logo-3-1d1919.png' | relative_url}});border-radius: 10px;"></a>
+		  		<a href="{{ '/' | relative_url }}" class="img logo  mb-5" style="background-image: url({{'images/logo/LuSEE-logo-3-1d1919.png' | relative_url}});border-radius: 10px;"></a>
 	        <ul class="list-unstyled components mb-5">
             <li>
               <a href="{{ '/' | relative_url }}">Home</a>
@@ -13,13 +13,13 @@
 	            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Software</a>
 	            <ul class="collapse list-unstyled" id="homeSubmenu">
                 <li>
-                    <a href="#">luseepy</a>
+                    <a href="{{ '/content/software_overview.html' | relative_url }}">Overview</a>
                 </li>
                 <li>
-                    <a href="#">Software 2</a>
+                    <a href="{{ '/content/packaging.html' | relative_url }}">Packaging</a>
                 </li>
                 <li>
-                    <a href="#">Software 3</a>
+                    <a href="{{ '/content/docker.html' | relative_url }}">Docker</a>
                 </li>
 	            </ul>
 	          </li>
@@ -94,7 +94,7 @@
                     <a class="nav-link" href="{{ '/content/contact.html' | relative_url }}">Contact</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="https://github.com/lusee-night" target="_blank"><img src="{{ 'images/github_64.png' | relative_url }}" height="16" ></a>
+                  <a class="nav-link" href="https://github.com/lusee-night" target="_blank"><img src="{{ 'images/logo/github_64.png' | relative_url }}" height="16" ></a>
               </li>
               </ul>
             </div>
