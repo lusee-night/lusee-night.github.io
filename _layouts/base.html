@@ -15,7 +15,7 @@
 		<div class="wrapper d-flex align-items-stretch">
 			<nav id="sidebar">
 				<div class="p-4 pt-5">
-		  		<a href="#" class="img logo  mb-5" style="background-image: url({{'images/LuSEE-logo-3-1d1919.png' | relative_url}});border-radius: 10px;"></a>
+		  		<a href="{{ '/' | relative_url }}" class="img logo  mb-5" style="background-image: url({{'images/LuSEE-logo-3-1d1919.png' | relative_url}});border-radius: 10px;"></a>
 	        <ul class="list-unstyled components mb-5">
             <li>
               <a href="{{ '/' | relative_url }}">Home</a>
@@ -55,15 +55,15 @@
 	          </li>
 
 	          <li>
-              <a href="#">Contact</a>
+              <a href="{{ '/content/contact.html' | relative_url }}">Contact</a>
 	          </li>
 
             <li>
-              <a href="#">About this site</a>
+              <a href="{{ '/content/about.html' | relative_url }}">About this site</a>
           </li>
 	        </ul>
       
-          <ul>&nbsp;</ul>
+
           <ul>&nbsp;</ul>
           <ul>&nbsp;</ul>
           <ul>&nbsp;</ul>
@@ -103,23 +103,22 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="nav navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="{{ '/' | relative_url }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="{{ '/content/contact.html' | relative_url }}">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
+                  <a class="nav-link" href="https://github.com/lusee-night" target="_blank"><img src="{{ 'images/github_64.png' | relative_url }}" height="16" ></a>
+              </li>
               </ul>
             </div>
           </div>
         </nav>
 
+        <div style="max-width: 90%; text-overflow: ellipsis; word-wrap: break-word;">
         {{ content }}
+        </div>
 
       </div>
 		</div>

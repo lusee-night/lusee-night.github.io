@@ -1,13 +1,12 @@
 ---
-title: "Science"
+title: "Contact"
 layout: base
-name: science
+name: contact
 ---
 
 _this page is work in progress_
 
-# Science
+# Contact LuSEE team
 
----
 
 

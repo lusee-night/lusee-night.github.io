@@ -1,13 +1,10 @@
 ---
-title: "Science"
+title: "About this site"
 layout: base
-name: science
+name: about
 ---
 
 _this page is work in progress_
 
-# Science
-
----
-
+# About this site
 
