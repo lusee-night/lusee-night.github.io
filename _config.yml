@@ -1,3 +1,6 @@
+# To simplify references to GitHub:
+github: "https://github.com/lusee-night/lusee-night.github.io"
+
 collections:
   content:
     output: true
