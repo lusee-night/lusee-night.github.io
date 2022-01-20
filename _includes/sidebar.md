@@ -28,13 +28,7 @@
               <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Hardware</a>
               <ul class="collapse list-unstyled" id="pageSubmenu">
                 <li>
-                    <a href="#">HW Page 1</a>
-                </li>
-                <li>
-                    <a href="#">HW Page 2</a>
-                </li>
-                <li>
-                    <a href="#">HW Page 3</a>
+                    <a href="{{ '/content/hardware_overview.html' | relative_url }}">Overview</a>
                 </li>
               </ul>
 	          </li>

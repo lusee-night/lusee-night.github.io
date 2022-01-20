@@ -14,8 +14,8 @@ which is very human-readable and economical, being quite close to plain text.
 You may be familiar with this syntax if you ever had to edit README.md files on
 GitHub or similar documents elsewhere. The site is built using the *static site
 generator* technology, whereby a group of Markdown files are compiled into
-HTML. This results in enhanced site security and performance. Static site
-generation is implemented natively in the *GitHub Pages* framework i.e.
+HTML and form a cohesive site. This results in enhanced site security and performance.
+Static site generation is implemented natively in the *GitHub Pages* framework i.e.
 sites are automatically generated and hosted if the respective repository
 is properly configured.
 
@@ -32,13 +32,17 @@ having the actual database.
 
 ## GitHub
 
-If you are willing to contribute by developing the actual content
-please <a href="{{ '/content/contact.html' | relative_url }}">contact the site devloper</a>
+If you are interested in contributing to this site
+please <a href="{{ '/content/contact.html' | relative_url }}">contact the devloper</a>
 for more information. Menu items and pages can be quickly added as needed.
+Once a section is set up, creation of material amounts to editing text files
+(at least in most basic cases).
 GitHub has now integrated the powerful *VS Code* editor into its
-web portal, which enables the users to do meaning work e.g. modify and
+web portal, which enables the users to do meaningful work e.g. modify and
 create content directly in the browser, without installing any software
-on their machine.
+on their machine. Saving the content will result in automatic "commit/push"
+to the GitHub repository and automatic site refresh, which may take a couple
+of minutes.
 
 ## Using your machine
 
