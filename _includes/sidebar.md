@@ -2,10 +2,10 @@
 				<div class="p-4 pt-5">
 		  		<a href="{{ '/' | relative_url }}" class="img logo  mb-5" style="background-image: url({{'images/logo/LuSEE-logo-3-1d1919.png' | relative_url}});border-radius: 10px;"></a>
 	        <ul class="list-unstyled components mb-5">
-            <li>
+            <li {% if page.name=='index.md' -%}class="active"{%- endif -%}>
               <a href="{{ '/' | relative_url }}">Home</a>
             </li>
-            <li>
+            <li {% if page.name=='science' -%}class="active"{%- endif -%}>
               <a href="{{ '/content/science.html' | relative_url }}">Science</a>
             </li>
             <li><!--  class="active" -->
@@ -33,11 +33,11 @@
               </ul>
 	          </li>
 
-	          <li>
+	          <li {% if page.name=='contact' -%}class="active"{%- endif -%}>
               <a href="{{ '/content/contact.html' | relative_url }}">Contact</a>
 	          </li>
 
-            <li>
+            <li {% if page.name=='about' -%}class="active"{%- endif -%}>
               <a href="{{ '/content/about.html' | relative_url }}">About this site</a>
           </li>
 	        </ul>
