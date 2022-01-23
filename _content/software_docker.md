@@ -1,7 +1,7 @@
 ---
 title: "Docker"
 layout: base
-name: docker
+name: software_docker
 ---
 
 # Docker

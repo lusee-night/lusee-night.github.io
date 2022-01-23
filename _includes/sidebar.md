@@ -2,13 +2,13 @@
 				<div class="p-4 pt-5">
 		  		<a href="{{ '/' | relative_url }}" class="img logo  mb-5" style="background-image: url({{'images/logo/LuSEE-logo-3-1d1919.png' | relative_url}});border-radius: 10px;"></a>
 	        <ul class="list-unstyled components mb-5">
-            <li {% if page.name=='index.md' -%}class="active"{%- endif -%}>
+            <li {% if page.name contains 'index' -%}class="active"{%- endif -%}>
               <a href="{{ '/' | relative_url }}">Home</a>
             </li>
             <li {% if page.name=='science' -%}class="active"{%- endif -%}>
               <a href="{{ '/content/science.html' | relative_url }}">Science</a>
             </li>
-            <li><!--  class="active" -->
+            <li {% if page.name contains 'software' -%}class="active"{%- endif -%}><!--  class="active" -->
 
 	            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Software</a>
 	            <ul class="collapse list-unstyled" id="homeSubmenu">
@@ -16,15 +16,15 @@
                     <a href="{{ '/content/software_overview.html' | relative_url }}">Overview</a>
                 </li>
                 <li>
-                    <a href="{{ '/content/packaging.html' | relative_url }}">Packaging</a>
+                    <a href="{{ '/content/software_packaging.html' | relative_url }}">Packaging</a>
                 </li>
                 <li>
-                    <a href="{{ '/content/docker.html' | relative_url }}">Docker</a>
+                    <a href="{{ '/content/software_docker.html' | relative_url }}">Docker</a>
                 </li>
 	            </ul>
 	          </li>
 
-	          <li>
+	          <li {% if page.name contains 'hardware' -%}class="active"{%- endif -%}>
               <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Hardware</a>
               <ul class="collapse list-unstyled" id="pageSubmenu">
                 <li>
@@ -81,14 +81,14 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item active">
+                <li  {% if page.name contains 'index' -%}class="active"{%- endif -%}">
                     <a class="nav-link" href="{{ '/' | relative_url }}">Home</a>
                 </li>
-                <li class="nav-item">
+                <li {% if page.name contains 'contact' -%}class="active"{%- endif -%}>
                     <a class="nav-link" href="{{ '/content/contact.html' | relative_url }}">Contact</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="https://github.com/lusee-night" target="_blank"><img src="{{ 'images/logo/github_64.png' | relative_url }}" height="16" ></a>
+                  <a class="nav-link" href="https://github.com/lusee-night" target="_blank"><img src="{{ 'images/logo/github_64.png' | relative_url }}" height="20" ></a>
               </li>
               </ul>
             </div>

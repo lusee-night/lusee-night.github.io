@@ -1,7 +1,7 @@
 ---
 title: "Software Packaging"
 layout: base
-name: packaging
+name: software_packaging
 ---
 
 # Software Packaging
