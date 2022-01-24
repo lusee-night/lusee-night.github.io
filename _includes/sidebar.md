@@ -33,6 +33,10 @@
               </ul>
 	          </li>
 
+	          <li {% if page.name=='reading' -%}class="active"{%- endif -%}>
+              <a href="{{ '/content/reading.html' | relative_url }}">Reading List</a>
+	          </li>
+
 	          <li {% if page.name=='contact' -%}class="active"{%- endif -%}>
               <a href="{{ '/content/contact.html' | relative_url }}">Contact</a>
 	          </li>
