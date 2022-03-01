@@ -24,14 +24,6 @@
 	            </ul>
 	          </li>
 
-	          <li {% if page.name contains 'hardware' -%}class="active"{%- endif -%}>
-              <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Hardware</a>
-              <ul class="collapse list-unstyled" id="pageSubmenu">
-                <li>
-                    <a href="{{ '/content/hardware_overview.html' | relative_url }}">Overview</a>
-                </li>
-              </ul>
-	          </li>
 
 	          <li {% if page.name=='reading' -%}class="active"{%- endif -%}>
               <a href="{{ '/content/reading.html' | relative_url }}">Reading List</a>
@@ -45,9 +37,18 @@
               <a href="{{ '/content/about.html' | relative_url }}">About this site</a>
             </li>
 
-            <li {% if page.name=='about' -%}class="active"{%- endif -%}>
-              <a href="{{ '/internal/home.html' | relative_url }}">Internal Pages</a>
-            </li>
+
+	          <li {% if page.name contains 'internal' -%}class="active"{%- endif -%}>
+              <a href="#internalSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Internal Pages</a>
+              <ul class="collapse list-unstyled" id="internalSubmenu">
+                <li>
+                    <a href="{{ '/internal/home.html' | relative_url }}">Main</a>
+                </li>
+                <li>
+                    <a href="{{ '/internal/hardware_overview.html' | relative_url }}">Hardware Overview</a>
+                </li>
+              </ul>
+	          </li>
 
 	        </ul>
       

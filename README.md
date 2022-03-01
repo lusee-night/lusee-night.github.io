@@ -19,6 +19,23 @@ for a specific reason -- utilities such as ```wget``` modify HTML anchor
 names (```#```) in a way that is not compatible with the current version
 of Bootstrap.
 
+
 ## "Internal" pages
 
-Pages meant to be accessible by authorized users only are terms "internal".
+Pages meant to be accessible by authorized users only are called "internal".
+An example of page protection:
+
+```
+	location /foo {
+		# First attempt to serve request as file, then
+		# as directory, then fall back to displaying a 404.
+		try_files $uri $uri/ =404;
+		auth_basic "Restricted";
+ 		auth_basic_user_file foo;
+	}
+```
+
+```bash
+# One of many methods of generating passwords for protection
+htpasswd -c foo LOGIN
+```

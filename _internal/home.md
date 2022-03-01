@@ -1,6 +1,6 @@
 ---
 title: home
-name: home
+name: internal_home
 layout: base
 ---
 
