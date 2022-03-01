@@ -6,7 +6,7 @@ layout: base
 
 # Reading List
 
-* [Zaslvsky et al, 2011]
+* [Zaslavsky et al, 2011]
 * [Eastwood et al, 2009]
 * [Chen et al, 2018]
 * [Pulupa et al, 2017]

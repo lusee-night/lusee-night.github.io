@@ -10,8 +10,8 @@
             </li>
             <li {% if page.name contains 'software' -%}class="active"{%- endif -%}><!--  class="active" -->
 
-	            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Software</a>
-	            <ul class="collapse list-unstyled" id="homeSubmenu">
+	            <a href="#softwareSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Software</a>
+	            <ul class="collapse list-unstyled" id="softwareSubmenu">
                 <li>
                     <a href="{{ '/content/software_overview.html' | relative_url }}">Overview</a>
                 </li>
@@ -43,14 +43,15 @@
 
             <li {% if page.name=='about' -%}class="active"{%- endif -%}>
               <a href="{{ '/content/about.html' | relative_url }}">About this site</a>
-          </li>
+            </li>
+
+            <li {% if page.name=='about' -%}class="active"{%- endif -%}>
+              <a href="{{ '/internal/home.html' | relative_url }}">Internal Pages</a>
+            </li>
+
 	        </ul>
       
 
-          <ul>&nbsp;</ul>
-          <ul>&nbsp;</ul>
-          <ul>&nbsp;</ul>
-          <ul>&nbsp;</ul>
           <ul>&nbsp;</ul>
           <ul>&nbsp;</ul>
           <ul>&nbsp;</ul>
