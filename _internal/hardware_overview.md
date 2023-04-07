@@ -1,7 +1,7 @@
 ---
 title: "Hardware Overview"
 layout: base
-name: hardware_overview
+name: internal_hardware_overview
 ---
 
 # Hardware Overview
