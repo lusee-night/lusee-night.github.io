@@ -5,9 +5,6 @@
             <li {% if page.name contains 'index' -%}class="active"{%- endif -%}>
               <a href="{{ '/' | relative_url }}">Home</a>
             </li>
-            <li {% if page.name=='science' -%}class="active"{%- endif -%}>
-              <a href="{{ '/content/science.html' | relative_url }}">Science</a>
-            </li>
             <li {% if page.name contains 'software' -%}class="active"{%- endif -%}><!--  class="active" -->
 
 	            <a href="#softwareSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Software</a>
