@@ -21,6 +21,10 @@
 	            </ul>
 	          </li>
 
+            <li {% if page.name=='documentation' -%}class="active"{%- endif -%}>
+              <a href="{{ '/content/documentation.html' | relative_url }}">Documentation</a>
+            </li>
+
             <li {% if page.name=='about' -%}class="active"{%- endif -%}>
               <a href="{{ '/content/about.html' | relative_url }}">About this site</a>
             </li>
